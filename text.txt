@@ -1,3 +1,4 @@
 some text in the text.txt
 another line of text
 
+another important line must located in archive-001.tar
