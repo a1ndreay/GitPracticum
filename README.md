@@ -52,23 +52,20 @@ staged -- "git commit" --> tracked;
 
 ```mermaid
 mindmap
-  root((mindmap))
-    Origins
-      Long history
+  root((Файл))
+    Новый файл
+      untracked
       ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-
+      Добавление
+        git add "Название_файла"
+    Изменённый файл
+      modified
+        git add "Название_файла"
+            git commit -m "Что сделано?"
+      tracked
+        Старая версия файла
+    Не изменённый файл
+      tracked
 
 ```
 
