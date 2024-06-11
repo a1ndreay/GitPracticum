@@ -78,7 +78,6 @@ title: Хэширование
 ---
 stateDiagram-v2
     [*] --> State1
-    State1 --> [*]
 
     State1: Commit
     note right of State1
@@ -90,4 +89,13 @@ stateDiagram-v2
     end note
 
 ```
+
+```bash
+cd [Project_folder]/.git && cat HEAD
+```
+### Покажет ссылку на файл с ссылкой на самый последний (новый) коммит
+[![image.png](https://i.postimg.cc/bNZ3Qj8D/image.png)](https://postimg.cc/pptfH4mR)
+
+### В этой директории находятся ссылки на самые последние коммиты из всех веток
+[![image.png](https://i.postimg.cc/cJFn9rBs/image.png)](https://postimg.cc/wtsM3xrP)
 **Author: a1ndreay**
