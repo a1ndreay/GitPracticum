@@ -98,4 +98,9 @@ cd [Project_folder]/.git && cat HEAD
 
 ### В этой директории находятся ссылки на самые последние коммиты из всех веток
 [![image.png](https://i.postimg.cc/cJFn9rBs/image.png)](https://postimg.cc/wtsM3xrP)
+
+```bash
+git commit --amend [-m "Новое сообщение] | [--no-edit {оставит прежнее сообщение}]
+```
+### С помощью этой команды новое изменение __git add__ перепишет последний коммит __HEAD__ 
 **Author: a1ndreay**
