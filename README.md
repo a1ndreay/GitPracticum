@@ -69,5 +69,23 @@ mindmap
 
 ```
 
+# __HEAD__ && __HASH__
+---
+
+---
+title: Simple sample
+---
+stateDiagram-v2
+    [*] --> State1
+    State1 --> [*]
+    State1: Commit
+    note right of State1
+        Информация об изменениях: дата, автор, изменёния в файлах
+    end note
+    State1 --> State2: SHA-1
+    note right of State2
+        Хэш - идентификатор коммита, длинной 40 символов
+    end note
+
 
 **Author: a1ndreay**
