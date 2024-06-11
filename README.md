@@ -45,8 +45,8 @@ git push
 
 ```mermaid
 graph LR;
-untracked -- "git add" --> staged(tracked);
-modified -- "git add" --> staged(tracked);
+untracked -- "git add" --> staged;
+modified -- "git add" --> staged;
 staged -- "git commit" --> tracked;
 ```
 
