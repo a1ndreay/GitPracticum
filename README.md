@@ -72,12 +72,14 @@ mindmap
 # __HEAD__ && __HASH__
 ---
 
+```mermaid
 ---
-title: Simple sample
+title: Хэширование
 ---
 stateDiagram-v2
     [*] --> State1
     State1 --> [*]
+
     State1: Commit
     note right of State1
         Информация об изменениях: дата, автор, изменёния в файлах
@@ -87,5 +89,5 @@ stateDiagram-v2
         Хэш - идентификатор коммита, длинной 40 символов
     end note
 
-
+```
 **Author: a1ndreay**
