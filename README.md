@@ -40,5 +40,15 @@ git push
 >  Если на удалёном репозитории ещё пусто, тогда `git remote add origin [git@github.com:username/Имя_репозитория.git]`
 >  Затем, `git push -u [master | main]`
 
+# Статусы файлов
+---
+
+```mermaid
+graph LR;
+untracked -- "git add" --> staged(tracked);
+modified -- "git add" --> staged(tracked);
+staged -- "git commit" --> tracked;
+```
+
 
 **Author: a1ndreay**
