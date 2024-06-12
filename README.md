@@ -36,9 +36,11 @@ git commit -m "Что объединяет изменения?"
 git push
 ```
 
-#### ⚠️ Первое добавление на __GitHub__
->  Если на удалёном репозитории ещё пусто, тогда `git remote add origin [git@github.com:username/Имя_репозитория.git]`
->  Затем, `git push -u [master | main]`
+> [!WARNING] 
+> Первое добавление на __GitHub__
+> Если на удалёном репозитории ещё пусто, тогда `git remote add origin [git@github.com:username/Имя_репозитория.git]`
+> Проверь, что репозитории связались `git remote -v`
+> Затем, `git push -u origin [master | main]`
 
 # Статусы файлов
 ---
@@ -68,6 +70,8 @@ mindmap
       tracked
 
 ```
+
+> Историю логов можно просмотрев git log --oneline
 
 # __HEAD__ && __HASH__
 ---
@@ -99,10 +103,12 @@ cd [Project_folder]/.git && cat HEAD
 ### В этой директории находятся ссылки на самые последние коммиты из всех веток
 [![image.png](https://i.postimg.cc/cJFn9rBs/image.png)](https://postimg.cc/wtsM3xrP)
 
+### ✍️ Переписываем последний коммит 
 ```bash
 git commit --amend [-m "Новое сообщение"] | [--no-edit {оставит прежнее сообщение}]
 ```
-### С помощью этой команды новое изменение __git add__ перепишет последний коммит __HEAD__, при этом стоит убедится что изменения находятся в __staging area__
+> [!TIP]
+> С помощью этой команды новое изменение __git add__ перепишет последний коммит __HEAD__, при этом стоит убедится что изменения находятся в __staging area__
 
 ## __Git reset__ $$ __Git restore__
 ### Добавьте следующую команду, чтобы откатить файл из __Staging area__ в __modified__
